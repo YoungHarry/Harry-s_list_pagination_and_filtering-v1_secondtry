@@ -20,8 +20,7 @@ const showPage= (list,page) => {
   const startIndex = page * studentsToShowPerPage - studentsToShowPerPage;
   const endIndex = page * studentsToShowPerPage -1;
   for(let i= 0; i < list.length; i++){
-      if(i >= startIndex && endIndex <= i ){
-      if(i >= startIndex && i <= endIndex  ){
+      if(i >= startIndex && i  <= endIndex  ){
         list[i].style.display= 'block';
       }else{
         list[i].style.display = 'none';
